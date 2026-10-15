@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daphne ~ Flowers Human</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAFA;
+      --text: #2C3035;
+      --muted: #9AA0A8;
+      --silver: #B8BEC6;
+      --gold: #D4AF37;
+      --gold-dark: #997A15;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 28px;
+    }
+
+    .hero-label {
+      font-size: 11px;
+      letter-spacing: 0.35em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: clamp(48px, 12vw, 72px);
+      letter-spacing: 0.28em;
+      text-indent: 0.28em;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 16px;
+      letter-spacing: 0.25em;
+      color: var(--silver);
+      margin-bottom: 48px;
+    }
+
+    .tagline {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      max-width: 380px;
+      margin-bottom: 56px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 36px;
+      border: 1px solid var(--text);
+      background: var(--text);
+      color: #fff;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: var(--text);
+    }
+
+    /* Sections */
+    section {
+      padding: 100px 0;
+      border-top: 1px solid rgba(184, 190, 198, 0.25);
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 0.3em;
+      color: var(--muted);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 28px;
+      letter-spacing: 0.18em;
+      margin-bottom: 28px;
+    }
+
+    p {
+      font-size: 13px;
+      color: var(--muted);
+      max-width: 480px;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      gap: 40px;
+      margin-top: 48px;
+    }
+
+    .feature h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: 0.15em;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      font-size: 12px;
+    }
+
+    /* Mythic */
+    .mythic {
+      text-align: center;
+    }
+
+    .mythic h2 {
+      color: var(--gold-dark);
+    }
+
+    .mythic p {
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      padding: 60px 0 80px;
+      text-align: center;
+      border-top: 1px solid rgba(184, 190, 198, 0.25);
+    }
+
+    footer p {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      margin: 0 auto;
+    }
+
+    .credit {
+      margin-top: 16px;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 13px;
+      letter-spacing: 0.15em;
+      color: var(--silver);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-label">Botanical Camera</div>
+    <h1>DAPHNE</h1>
+    <div class="subtitle">~ Flowers Human ~</div>
+    <p class="tagline">
+      A quiet metamorphosis.<br>
+      Your face becomes flower.
+    </p>
+    <a href="#" class="btn">Open App</a>
+  </header>
+
+  <!-- Concept -->
+  <section>
+    <div class="container">
+      <div class="section-label">Concept</div>
+      <h2>Metamorphosis</h2>
+      <p>
+        Named after the nymph who turned into a laurel tree.<br>
+        Daphne captures the moment when human and flower become one.
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2>Essence</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>AI Framing</h3>
+          <p>Automatically detects eyes, face, bust, or full body and places botanical elements with precision.</p>
+        </div>
+        <div class="feature">
+          <h3>Botanical Bloom</h3>
+          <p>Flowers, leaves and light gently grow over your image in real time.</p>
+        </div>
+        <div class="feature">
+          <h3>A small, delightful secret inside. </h3>
+          <p>It's still a secret</p>
+        </div>
+        <div class="feature">
+          <h3>Collection</h3>
+          <p>Save photos and short videos. Build your own botanical archive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mythic -->
+  <section class="mythic">
+    <div class="container">
+      <div class="section-label">Inscription</div>
+      <h2>✦ Discover the magic at midnight.  ✦</h2>
+      <p>
+        Gone before the morning comes.<br>
+        </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>DAPHNE · FLOWERS HUMAN</p>
+      <div class="credit">盆栽企画 presents</div>
+    </div>
+  </footer>
+
+</body>
+</html>
